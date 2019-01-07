@@ -4,13 +4,25 @@
 let age = 4
 let message = `micheal, age = ${age}`;
 
-let num = prompt('enter number bro : ');
-num = Number(num);
-//alert (typeof num);
+function showadmin(){
+  let login = prompt('enter login : ');
+  if (login == 'Admin'){
+    let pass = prompt('enter password: ');
+    if (pass == '' || pass == null) {
+      alert('Cancelled');
+    }else{
+      if (pass == 'TheMaster') {
+        alert('Welcome');
+      }else {
+        alert('wrong password');
+      }
+    }
+  }else if (login == '' || login == null) {
+    alert('Cancelled');
 
-if ( !isNaN (num)) {
-  let display = (num > 0 ) ? 1 : (num < 0 ) ? -1 : 0;
-  alert (display);
-} else{
-  alert ('not a number');
+  }else{
+    alert('i dont know u');
+  }
 }
+
+showadmin();
