@@ -1,0 +1,56 @@
+<html>
+<head>
+  
+</head>
+<body>
+    
+    <script src="script4999.js"></script>
+    <script>
+      
+
+
+//5  optional parenthesis in constructor functions when they have no arguments
+
+//str.test = 5; // (*)
+
+
+function sumInput() {
+  let ans = 0;
+  let arr = [];
+  let total = 0;
+  let fakeValue = false;
+
+  while (fakeValue == false) {
+    ans = prompt('enter number : ');
+
+
+    if (ans == null || !isFinite(ans)) {
+      fakeValue = true;
+    } else {
+       arr.push(+ans);
+    }
+   
+  }
+
+  for (let e of arr) total += e;
+
+  alert(total);
+  return total;
+
+}
+
+let b = [1, 56, 12, 5];
+
+alert(b.sort());
+
+
+//fruits.length = 3; // assign a property with the index far greater than its length
+//r = '3fff';
+//alert( (+r))
+
+//alert(Math.min(r));
+
+
+    </script>
+</body>
+</html>
