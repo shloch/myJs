@@ -4,7 +4,7 @@
 </head>
 <body>
     
-    <script src="script4999.js"></script>
+    <script src="codewars222.js"></script>
     <script>
       
 
@@ -39,10 +39,20 @@ function sumInput() {
 
 }
 
-let b = [1, 56, 12, 5];
 
-alert(b.sort());
+let users = [
+  {id: 1, name: "John"},
+  {id: 2, name: "Pete"},
+  {id: 3, name: "Mary"}
+];
 
+let user = users.filter(function(e){
+   return e.id > 1
+});
+
+user.forEach(function(e){
+ // alert(`${e.name}`);
+});
 
 //fruits.length = 3; // assign a property with the index far greater than its length
 //r = '3fff';
