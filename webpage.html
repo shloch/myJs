@@ -4,7 +4,7 @@
 </head>
 <body>
     
-    <script src="codewars222.js"></script>
+    <script src="calculate.js"></script>
     <script>
       
 
@@ -40,19 +40,15 @@ function sumInput() {
 }
 
 
-let users = [
-  {id: 1, name: "John"},
-  {id: 2, name: "Pete"},
-  {id: 3, name: "Mary"}
-];
+let arrw = [5, 2, 1, -10, 8];
 
-let user = users.filter(function(e){
-   return e.id > 1
-});
+// ... your code to sort it in the reverse order
 
-user.forEach(function(e){
- // alert(`${e.name}`);
-});
+//alert( arr ); // 8, 5, 2, 1, -10
+
+console.log(arrw.sort());
+
+//console.log(Array.isArray(users));
 
 //fruits.length = 3; // assign a property with the index far greater than its length
 //r = '3fff';
