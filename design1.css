@@ -1,0 +1,83 @@
+body {
+  background: #293f50;
+  color: #888;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.primary-header a,
+.primary-footer a {
+  color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #648880;
+}
+
+
+
+
+
+section[id="pers-of-week"] {
+    border: 1px solid red;
+    box-sizing: border-box;
+    line-height: calc(1.5em + .2vw);
+    font-family: 'Slabo 27px', Calibri, Georgia, serif;
+    letter-spacing: 0.056em;
+    font-size: 1.05em;
+    color: rgb(118, 118, 118);
+}
+
+#pers-of-week::after {
+    content: "";
+    clear: both;
+}
+
+
+/*left*/
+
+section[id="pers-of-week"] div[class="side-txt"] {
+    width: 10%;
+    border: 1px solid red;
+    text-transform: uppercase;
+    float: left;
+}
+
+section[id="pers-of-week"] div[class="side-txt"]::before {
+    content: "--";
+}
+
+
+/*middle*/
+
+section[id="pers-of-week"] div[class="pers-of-wk-photo"] {
+    border: 1px solid black;
+    width: 15%;
+}
+
+#pers-of-week .pers-of-wk-photo img {
+    border: 5px solid red;
+    border-radius: 5px;
+}
+
+
+/* right */
+
+article[class="pers-of-wk-txt"] {
+    width: 50%;
+    float: left;
+    border: 1px solid greenyellow;
+}
+
+article[class="pers-of-wk-txt"] h4 {
+    text-transform: uppercase;
+    font-family: 'Abel', sans-serif;
+    padding-bottom: 0.4em;
+    font-weight: 100;
+    letter-spacing: 0.226em;
+    color: #7A7A7A;
+}
+
+article[class="pers-of-wk-txt"] a {
+    text-decoration: underline;
+    color: rgb(118, 118, 118);
+}
